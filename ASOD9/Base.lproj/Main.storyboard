@@ -19,24 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWb-Vp-7uK">
-                                <rect key="frame" x="284" y="550" width="32" height="30"/>
+                                <rect key="frame" x="284" y="285" width="32" height="30"/>
                                 <state key="normal" title="start"/>
                                 <connections>
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5oD-IS-Nzr"/>
+                                    <segue destination="ikE-Lk-DNs" kind="presentation" identifier="HIT" modalTransitionStyle="coverVertical" id="mNb-uJ-xzZ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wps-PM-Qxr">
-                                <rect key="frame" x="29" y="34" width="551" height="508"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mWb-Vp-7uK" firstAttribute="top" secondItem="wps-PM-Qxr" secondAttribute="bottom" constant="8" symbolic="YES" id="2aD-fC-FEd"/>
-                            <constraint firstItem="wps-PM-Qxr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5ud-Gl-Uui"/>
-                            <constraint firstItem="wps-PM-Qxr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="H2X-Ai-L0t"/>
-                            <constraint firstItem="mWb-Vp-7uK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEL-eg-Rey"/>
-                            <constraint firstAttribute="bottom" secondItem="mWb-Vp-7uK" secondAttribute="bottom" constant="20" symbolic="YES" id="TD4-3J-w0P"/>
-                            <constraint firstItem="wps-PM-Qxr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="tQ9-te-MMW"/>
+                            <constraint firstItem="mWb-Vp-7uK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4vb-dr-Gc4"/>
+                            <constraint firstItem="mWb-Vp-7uK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8kn-iy-AEg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -59,20 +53,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wps-PM-Qxr">
+                                <rect key="frame" x="25" y="20" width="551" height="522"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cs-qs-jg9">
-                                <rect key="frame" x="250" y="285" width="100" height="30"/>
+                                <rect key="frame" x="250" y="550" width="100" height="30"/>
                                 <state key="normal" title="return to earth"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="vfN-OL-Pdv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G3-r7-eT3">
+                                <rect key="frame" x="439" y="554" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9Cs-qs-jg9" firstAttribute="centerX" secondItem="xVK-xx-Ejq" secondAttribute="centerX" id="0Bh-Sd-DIb"/>
-                            <constraint firstItem="9Cs-qs-jg9" firstAttribute="centerY" secondItem="xVK-xx-Ejq" secondAttribute="centerY" id="7EZ-ua-3wl"/>
+                            <constraint firstItem="wps-PM-Qxr" firstAttribute="top" secondItem="JTd-Hh-DtW" secondAttribute="bottom" id="8Dj-6d-uEn"/>
+                            <constraint firstItem="9Cs-qs-jg9" firstAttribute="top" secondItem="wps-PM-Qxr" secondAttribute="bottom" constant="8" symbolic="YES" id="Api-r9-4Ez"/>
+                            <constraint firstAttribute="bottom" secondItem="9Cs-qs-jg9" secondAttribute="bottom" constant="20" symbolic="YES" id="MBI-hN-ly4"/>
+                            <constraint firstItem="wps-PM-Qxr" firstAttribute="leading" secondItem="xVK-xx-Ejq" secondAttribute="leadingMargin" constant="5" id="MdX-Wj-PTG"/>
+                            <constraint firstItem="6G3-r7-eT3" firstAttribute="leading" secondItem="9Cs-qs-jg9" secondAttribute="trailing" constant="89" id="gCX-6w-ye4"/>
+                            <constraint firstItem="9Cs-qs-jg9" firstAttribute="baseline" secondItem="6G3-r7-eT3" secondAttribute="baseline" id="gdl-l3-Qxc"/>
+                            <constraint firstItem="wps-PM-Qxr" firstAttribute="centerX" secondItem="9Cs-qs-jg9" secondAttribute="centerX" id="j2R-9x-8hM"/>
+                            <constraint firstItem="wps-PM-Qxr" firstAttribute="centerX" secondItem="xVK-xx-Ejq" secondAttribute="centerX" id="wwR-n7-F8k"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="wps-PM-Qxr" id="uKG-Zc-Us6"/>
+                        <outlet property="titleLable" destination="6G3-r7-eT3" id="NOc-dH-MPN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSL-iv-I4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
