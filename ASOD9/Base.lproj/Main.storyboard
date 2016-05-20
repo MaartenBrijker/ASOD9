@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ASOD9" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWb-Vp-7uK">
+                                <rect key="frame" x="284" y="550" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5oD-IS-Nzr"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wps-PM-Qxr">
+                                <rect key="frame" x="29" y="34" width="551" height="508"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mWb-Vp-7uK" firstAttribute="top" secondItem="wps-PM-Qxr" secondAttribute="bottom" constant="8" symbolic="YES" id="2aD-fC-FEd"/>
+                            <constraint firstItem="wps-PM-Qxr" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5ud-Gl-Uui"/>
+                            <constraint firstItem="wps-PM-Qxr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="H2X-Ai-L0t"/>
+                            <constraint firstItem="mWb-Vp-7uK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEL-eg-Rey"/>
+                            <constraint firstAttribute="bottom" secondItem="mWb-Vp-7uK" secondAttribute="bottom" constant="20" symbolic="YES" id="TD4-3J-w0P"/>
+                            <constraint firstItem="wps-PM-Qxr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="9" id="tQ9-te-MMW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="wps-PM-Qxr" id="qc9-7Z-acn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="508" y="324"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hd7-Qe-sky">
+            <objects>
+                <viewController id="ikE-Lk-DNs" customClass="ASODViewController" customModule="ASOD9" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JTd-Hh-DtW"/>
+                        <viewControllerLayoutGuide type="bottom" id="asw-i2-4Hq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xVK-xx-Ejq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cs-qs-jg9">
+                                <rect key="frame" x="250" y="285" width="100" height="30"/>
+                                <state key="normal" title="return to earth"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="vfN-OL-Pdv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Cs-qs-jg9" firstAttribute="centerX" secondItem="xVK-xx-Ejq" secondAttribute="centerX" id="0Bh-Sd-DIb"/>
+                            <constraint firstItem="9Cs-qs-jg9" firstAttribute="centerY" secondItem="xVK-xx-Ejq" secondAttribute="centerY" id="7EZ-ua-3wl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSL-iv-I4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1321" y="339"/>
         </scene>
     </scenes>
 </document>

@@ -14,6 +14,7 @@
 		A5C55F581CEE4FA000BADEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C55F561CEE4FA000BADEC6 /* LaunchScreen.storyboard */; };
 		A5C55F631CEE4FA100BADEC6 /* ASOD9Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55F621CEE4FA100BADEC6 /* ASOD9Tests.swift */; };
 		A5C55F6E1CEE4FA100BADEC6 /* ASOD9UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55F6D1CEE4FA100BADEC6 /* ASOD9UITests.swift */; };
+		A5C55F7C1CEE534700BADEC6 /* ASODViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55F7B1CEE534700BADEC6 /* ASODViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A5C55F691CEE4FA100BADEC6 /* ASOD9UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASOD9UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C55F6D1CEE4FA100BADEC6 /* ASOD9UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASOD9UITests.swift; sourceTree = "<group>"; };
 		A5C55F6F1CEE4FA100BADEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C55F7B1CEE534700BADEC6 /* ASODViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASODViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				A5C55F4D1CEE4FA000BADEC6 /* AppDelegate.swift */,
 				A5C55F4F1CEE4FA000BADEC6 /* ViewController.swift */,
+				A5C55F7B1CEE534700BADEC6 /* ASODViewController.swift */,
 				A5C55F511CEE4FA000BADEC6 /* Main.storyboard */,
 				A5C55F541CEE4FA000BADEC6 /* Assets.xcassets */,
 				A5C55F561CEE4FA000BADEC6 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C55F7C1CEE534700BADEC6 /* ASODViewController.swift in Sources */,
 				A5C55F501CEE4FA000BADEC6 /* ViewController.swift in Sources */,
 				A5C55F4E1CEE4FA000BADEC6 /* AppDelegate.swift in Sources */,
 			);
@@ -487,6 +491,7 @@
 				A5C55F741CEE4FA100BADEC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5C55F751CEE4FA100BADEC6 /* Build configuration list for PBXNativeTarget "ASOD9Tests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				A5C55F771CEE4FA100BADEC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5C55F781CEE4FA100BADEC6 /* Build configuration list for PBXNativeTarget "ASOD9UITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				A5C55F7A1CEE4FA100BADEC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
