@@ -30,11 +30,11 @@ class ASODViewController: UIViewController {
         if (NASADetails != nil) {
             
             print("IN HEREEEEEE")
-        
+            
             let imageURL = NASADetails!["url"] as! String
             let webURL = NSURL(string: imageURL)
             
-            print("         WEB URL =", webURL!)
+            print("WEB URL =", webURL!)
             
             downloadImage(webURL!)
             
@@ -44,8 +44,9 @@ class ASODViewController: UIViewController {
             titleLable.text = "waarom vervangt het textlabel niet?"
             
         }
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
