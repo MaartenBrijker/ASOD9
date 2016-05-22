@@ -3,10 +3,8 @@
 # Maarten Brijker
 # 10440682
 #
-# App die de Astronomy Picture of the Day download die elke dag gemaakt wordt door NASA 
-# op een door de gebruiker gespcifieerde datum. 
-# De app laat vervolgens deze foto zien, leest een beschrijving voor en voor de extra fun
-# kun je als gebruiker space geluiden toevoegen met de buttons en sliders. Yaaay!
+# App die de Astronomy Picture of the Day download die elke dag gemaakt wordt door NASA op een door de gebruiker gespcifieerde datum. 
+# De app laat vervolgens deze foto zien, leest een beschrijving voor en voor de extra fun kun je als gebruiker space geluiden toevoegen met de buttons en sliders. Yaaay!
 #
 # Ik heb in deze app de NASA APi en de AudioKit API gebruikt. 
 # Vooral deze AudioKit API is interessant omdat ik in mijn eindproject ook met audio wil werken.  
