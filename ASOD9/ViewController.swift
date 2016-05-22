@@ -32,14 +32,13 @@ class ViewController: UIViewController {
         let month = Int(monthSubmit.text!)
         let day = Int(daySubmit.text!)
         
-        performGetRequest(year!, month: month!, day: day!)
+        if (yearSubmit.text! != "" && monthSubmit.text! != "" && daySubmit.text! != "") {
+            performGetRequest(year!, month: month!, day: day!)
+        }
     }
     
     func performGetRequest(year: Int, month: Int, day: Int) {
-        // https://api.nasa.gov/planetary/apod?api_key=oSbvqKOf8xqoqiakwOtFrwWUu2MEciFHTslA1u7f
-        // apod? \(submitteddate) &api_key=
-        
-//        let sourceUrl = "https://api.nasa.gov/planetary/apod?date=2016-05-18&api_key=oSbvqKOf8xqoqiakwOtFrwWUu2MEciFHTslA1u7f"
+//        let sourceUrl = "https://api.nasa.gov/planetary/apod?date=2016-04-18&api_key=oSbvqKOf8xqoqiakwOtFrwWUu2MEciFHTslA1u7f"
         let sourceUrl = "https://api.nasa.gov/planetary/apod?date=\(year)-\(month)-\(day)&api_key=oSbvqKOf8xqoqiakwOtFrwWUu2MEciFHTslA1u7f"
         print(sourceUrl)
         let url = NSURL(string: sourceUrl)
