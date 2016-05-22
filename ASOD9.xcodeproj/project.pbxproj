@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A520B85E1CF258C9008EBBCD /* akonalien.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A520B85D1CF258C9008EBBCD /* akonalien.mp3 */; };
+		A59288941CEFBE20001C814A /* RFX6.WAV in Resources */ = {isa = PBXBuildFile; fileRef = A59288931CEFBE20001C814A /* RFX6.WAV */; };
+		A59288951CEFBE69001C814A /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59288901CEFBDFD001C814A /* AudioKit.framework */; };
+		A59288981CEFBEC0001C814A /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A59288901CEFBDFD001C814A /* AudioKit.framework */; };
+		A59288991CEFBEC0001C814A /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A59288901CEFBDFD001C814A /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A5C55F4E1CEE4FA000BADEC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55F4D1CEE4FA000BADEC6 /* AppDelegate.swift */; };
 		A5C55F501CEE4FA000BADEC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55F4F1CEE4FA000BADEC6 /* ViewController.swift */; };
 		A5C55F531CEE4FA000BADEC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5C55F511CEE4FA000BADEC6 /* Main.storyboard */; };
@@ -18,6 +23,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A592888F1CEFBDFD001C814A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A592888A1CEFBDFC001C814A /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C42F35001C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		A59288911CEFBDFD001C814A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A592888A1CEFBDFC001C814A /* AudioKit For iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C43792781C0CE2E0001E9160;
+			remoteInfo = AudioKitTests;
+		};
+		A59288961CEFBEA1001C814A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A592888A1CEFBDFC001C814A /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
+		A592889A1CEFBEC0001C814A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A592888A1CEFBDFC001C814A /* AudioKit For iOS.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C42F34FF1C057E03000E937C;
+			remoteInfo = AudioKit;
+		};
 		A5C55F5F1CEE4FA100BADEC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A5C55F421CEE4FA000BADEC6 /* Project object */;
@@ -34,7 +67,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A592889C1CEFBEC0001C814A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A59288991CEFBEC0001C814A /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A520B85D1CF258C9008EBBCD /* akonalien.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = akonalien.mp3; sourceTree = "<group>"; };
+		A592888A1CEFBDFC001C814A /* AudioKit For iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "AudioKit For iOS.xcodeproj"; path = "External/AudioKit-master/AudioKit/iOS/AudioKit For iOS.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		A59288931CEFBE20001C814A /* RFX6.WAV */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = RFX6.WAV; sourceTree = "<group>"; };
 		A5C55F4A1CEE4FA000BADEC6 /* ASOD9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASOD9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C55F4D1CEE4FA000BADEC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5C55F4F1CEE4FA000BADEC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +106,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A59288981CEFBEC0001C814A /* AudioKit.framework in Frameworks */,
+				A59288951CEFBE69001C814A /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +128,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A592888B1CEFBDFC001C814A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A59288901CEFBDFD001C814A /* AudioKit.framework */,
+				A59288921CEFBDFD001C814A /* AudioKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A5C55F411CEE4FA000BADEC6 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +167,9 @@
 				A5C55F541CEE4FA000BADEC6 /* Assets.xcassets */,
 				A5C55F561CEE4FA000BADEC6 /* LaunchScreen.storyboard */,
 				A5C55F591CEE4FA000BADEC6 /* Info.plist */,
+				A59288931CEFBE20001C814A /* RFX6.WAV */,
+				A520B85D1CF258C9008EBBCD /* akonalien.mp3 */,
+				A592888A1CEFBDFC001C814A /* AudioKit For iOS.xcodeproj */,
 			);
 			path = ASOD9;
 			sourceTree = "<group>";
@@ -138,10 +202,13 @@
 				A5C55F461CEE4FA000BADEC6 /* Sources */,
 				A5C55F471CEE4FA000BADEC6 /* Frameworks */,
 				A5C55F481CEE4FA000BADEC6 /* Resources */,
+				A592889C1CEFBEC0001C814A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A59288971CEFBEA1001C814A /* PBXTargetDependency */,
+				A592889B1CEFBEC0001C814A /* PBXTargetDependency */,
 			);
 			name = ASOD9;
 			productName = ASOD9;
@@ -221,6 +288,12 @@
 			mainGroup = A5C55F411CEE4FA000BADEC6;
 			productRefGroup = A5C55F4B1CEE4FA000BADEC6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A592888B1CEFBDFC001C814A /* Products */;
+					ProjectRef = A592888A1CEFBDFC001C814A /* AudioKit For iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A5C55F491CEE4FA000BADEC6 /* ASOD9 */,
@@ -230,13 +303,32 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A59288901CEFBDFD001C814A /* AudioKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AudioKit.framework;
+			remoteRef = A592888F1CEFBDFD001C814A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A59288921CEFBDFD001C814A /* AudioKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AudioKitTests.xctest;
+			remoteRef = A59288911CEFBDFD001C814A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A5C55F481CEE4FA000BADEC6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A520B85E1CF258C9008EBBCD /* akonalien.mp3 in Resources */,
 				A5C55F581CEE4FA000BADEC6 /* LaunchScreen.storyboard in Resources */,
 				A5C55F551CEE4FA000BADEC6 /* Assets.xcassets in Resources */,
+				A59288941CEFBE20001C814A /* RFX6.WAV in Resources */,
 				A5C55F531CEE4FA000BADEC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +379,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A59288971CEFBEA1001C814A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			targetProxy = A59288961CEFBEA1001C814A /* PBXContainerItemProxy */;
+		};
+		A592889B1CEFBEC0001C814A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AudioKit;
+			targetProxy = A592889A1CEFBEC0001C814A /* PBXContainerItemProxy */;
+		};
 		A5C55F601CEE4FA100BADEC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A5C55F491CEE4FA000BADEC6 /* ASOD9 */;
@@ -408,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ASOD9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maarten-Brijker.ASOD9";
@@ -419,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ASOD9/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Maarten-Brijker.ASOD9";

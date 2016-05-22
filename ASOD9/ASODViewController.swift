@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AudioKit
+import AVFoundation
 
 class ASODViewController: UIViewController {
 
@@ -14,37 +16,23 @@ class ASODViewController: UIViewController {
     var NASADetails: NSDictionary?
     
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var titleLable: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        let webURL = NSURL(string: "http://apod.nasa.gov/apod/image/1605/halo_pano_beletsky.jpg")
-//        downloadImage(webURL!)
-        
-        print("NASADetails =====", NASADetails)
-        
-        titleLable.text = "waarom laat je dit definitief zien?"
-        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
         if (NASADetails != nil) {
-            
             print("IN HEREEEEEE")
-            
             let imageURL = NASADetails!["url"] as! String
             let webURL = NSURL(string: imageURL)
-            
             print("WEB URL =", webURL!)
-            
             downloadImage(webURL!)
-            
-            let title = NASADetails!["title"]
-            print("title ===== ", title)
-            
-            titleLable.text = "waarom vervangt het textlabel niet?"
-            
+            titleLable.text = NASADetails!["title"] as? String
+            let theSpeech = NASADetails!["explanation"] as! String
+            startSpeech(theSpeech)
         }
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,5 +52,15 @@ class ASODViewController: UIViewController {
         NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
             completion(data: data, response: response, error: error)
             }.resume()
+    }
+    
+    func startSpeech(theSpeech: String) {
+        let utterance = AVSpeechUtterance(string: theSpeech)
+        utterance.voice = AVSpeechSynthesisVoice(language: "en-IR")
+        utterance.rate = 0.4
+        utterance.pitchMultiplier = 2.0
+        utterance.volume = 0.5
+        let synthesizer = AVSpeechSynthesizer()
+        synthesizer.speakUtterance(utterance)
     }
 }
